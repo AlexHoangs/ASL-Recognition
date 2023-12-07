@@ -2,9 +2,11 @@ import tensorflow as tf
 import streamlit as st
 from PIL import Image, ImageOps
 import numpy as np
-import model2
 
-class_names = model2.class_names
+# class names are generated from train_ds.class_names in asl_model.jpynb
+class_names = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 
+               'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 
+               'U', 'V', 'W', 'X', 'Y', 'Z', 'del', 'nothing', 'space']
 
 model = tf.keras.models.load_model("my_model.hdf5")
 st.write(
@@ -37,7 +39,6 @@ else:
     predictions = import_and_predict(image, model)
 
     score = tf.nn.softmax(predictions[0])
-    print(class_names)
 
     st.write(
         "This image most likely belongs to {} with a {:.2f} percent confidence.".format(
