@@ -52,6 +52,12 @@ Follow these steps to set up the project environment and run the application.
 pip install -r requirements.txt
 ```
 
+If the above command fails, try the following:
+
+```bash
+pip install tensorflow streamlit Pillow==9.5.0
+```
+
 ### Running the Application
 
 ```bash
