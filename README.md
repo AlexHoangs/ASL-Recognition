@@ -28,6 +28,10 @@ Follow these steps to set up the project environment and run the application.
    env\Scripts\activate.bat
    ```
 
+   ```bash
+   python -m pip install --upgrade pip
+   ```
+
    b. **MacOS/Linux**
 
    ```bash
@@ -36,6 +40,10 @@ Follow these steps to set up the project environment and run the application.
 
    ```bash
    source env/bin/activate
+   ```
+
+   ```bash
+   python3 -m pip install --upgrade pip
    ```
 
 ### Installing Dependencies
