@@ -18,19 +18,21 @@ Follow these steps to set up the project environment and run the application.
 
 1. **Create a Virtual Environment**
 
-   ```bash
-   python3 -m venv env
-   ```
-
-2. **Activate the Virtual Environment**
-
    a. **Windows**
+
+   ```bash
+   python -m venv env
+   ```
 
    ```bash
    env\Scripts\activate.bat
    ```
 
    b. **MacOS/Linux**
+
+   ```bash
+   python3 -m venv env
+   ```
 
    ```bash
    source env/bin/activate
