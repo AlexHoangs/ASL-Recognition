@@ -65,5 +65,5 @@ streamlit run app.py
 ```
 
 You can now view the application in your browser at `localhost:8501`.
-To utilize the application, you will need to upload an image of a hand gesture.
+To utilize the application, you will need to upload an image of a hand gesture (we have provided some test images to use in the `images/asl_alphabet_test/` directory).
 Our model will then predict the letter that the hand gesture represents along with the model's confidence in the prediction.
